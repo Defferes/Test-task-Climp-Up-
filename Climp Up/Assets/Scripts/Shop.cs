@@ -10,7 +10,7 @@ public class Shop : MonoBehaviour
 
     private void Update()
     {
-        ShopText.text = Convert.ToString(MoneyData.ShopPrice);
+        //ShopText.text = Convert.ToString(MoneyData.ShopPrice);
     }
 
     public void ClickOn()
