@@ -9,6 +9,6 @@ public class Move : MonoBehaviour
 
     private void FixedUpdate()
     {
-        transform.position = trackingObj.transform.position;
+        transform.position = new Vector3(trackingObj.transform.position.x,transform.position.y,trackingObj.transform.position.z);
     }
 }

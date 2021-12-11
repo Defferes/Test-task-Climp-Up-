@@ -7,10 +7,12 @@ public class DeadCollider : MonoBehaviour
 {
     public GameManager _gameManager;
     private void OnCollisionEnter(Collision other)
+    { 
+        Invoke("LoseGm",2f);
+    }
+
+    private void LoseGm()
     {
-        if (other.gameObject.name == "PuckRight" || other.gameObject.name == "PuckLeft")
-        {
-            _gameManager.LoseGame();
-        }
+        _gameManager.LoseGame();
     }
 }

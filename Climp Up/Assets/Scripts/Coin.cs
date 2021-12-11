@@ -8,8 +8,13 @@ public class Coin : MonoBehaviour
 
     private void OnCollisionEnter(Collision other)
     {
-        MoneyData.Coin++;
-        GetComponent<MeshRenderer>().enabled = false;
-        GetComponent<CapsuleCollider>().isTrigger = true;
+        if (other.gameObject.name == "PuckRight" || other.gameObject.name == "PuckLeft")
+        {
+            MoneyData.Coin += 100;
+            GetComponent<MeshRenderer>().enabled = false;
+            GetComponent<CapsuleCollider>().isTrigger = true;
+        }
+        
+        
     }
 }
