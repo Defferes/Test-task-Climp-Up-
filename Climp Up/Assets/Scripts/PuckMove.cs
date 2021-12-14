@@ -26,7 +26,7 @@ public class PuckMove : MonoBehaviour
     {
         int layerMaskOnlyPlayer = 1 << 8;
             int layerMaskWithoutPlayer = ~layerMaskOnlyPlayer;
-            if (Input.touchCount > 0)
+            if (Input.touchCount == 1)
             {
                 Touch _touch = Input.GetTouch(0);
                 if (Input.GetMouseButtonDown(0))

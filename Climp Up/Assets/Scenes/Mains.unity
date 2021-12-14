@@ -556,18 +556,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _GameManager: {fileID: 738092180}
---- !u!114 &452400912 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4984329670850102484, guid: 137f958d58ae9443784f34033ac798b7,
-    type: 3}
-  m_PrefabInstance: {fileID: 1518132005}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a80d337cc347b434486dadd120ba6230, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &454161130
 GameObject:
   m_ObjectHideFlags: 0
@@ -1303,7 +1291,7 @@ GameObject:
   - component: {fileID: 800972176}
   - component: {fileID: 800972175}
   - component: {fileID: 800972174}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1897,8 +1885,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 452400912}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 738092180}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
         m_MethodName: MenuLoad
         m_Mode: 1
         m_Arguments:
@@ -1959,7 +1947,7 @@ GameObject:
   - component: {fileID: 1131428734}
   - component: {fileID: 1131428733}
   - component: {fileID: 1131428732}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2278,7 +2266,7 @@ GameObject:
   - component: {fileID: 1244160434}
   - component: {fileID: 1244160433}
   - component: {fileID: 1244160432}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
